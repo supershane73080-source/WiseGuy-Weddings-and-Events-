@@ -1,0 +1,12 @@
+# make a new folder anywhere and cd into it, then:
+npx create-next-app@latest wiseguy-weddings-events
+
+# When prompted, answer:
+# ✔ TypeScript?             Yes
+# ✔ ESLint?                 Yes
+# ✔ Tailwind CSS?           Yes   <-- important
+# ✔ src/ directory?         No (press N)
+# ✔ App Router?             Yes
+# ✔ Import alias?           No (or Yes is fine)
+cd wiseguy-weddings-events
+npm run dev
