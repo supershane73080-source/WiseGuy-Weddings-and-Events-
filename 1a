@@ -1,0 +1,25 @@
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter, Playfair_Display } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["700","800","900"],
+  variable: "--font-playfair",
+});
+
+export const metadata: Metadata = {
+  title: "WiseGuy Weddings & Events",
+  description: "We’ll make you an event they can’t refuse.",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body className={`${inter.variable} ${playfair.variable} font-sans bg-[#FAF7F2] text-[#0B0B0C]`}>
+        {children}
+      </body>
+    </html>
+  );
+}
