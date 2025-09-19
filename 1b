@@ -1,0 +1,24 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}"
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-inter)", "ui-sans-serif", "system-ui"],
+        display: ["var(--font-playfair)", "serif"],
+      },
+      colors: {
+        brand: {
+          black: "#0B0B0C",
+          ivory: "#FAF7F2",
+          gold:  "#D4AF37",
+          wine:  "#5E2832",
+        }
+      }
+    },
+  },
+  plugins: [],
+};
